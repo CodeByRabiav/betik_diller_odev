@@ -1,4 +1,4 @@
-# src/dekorator.py
+
 from functools import wraps
 import time
 from typing import Callable, Iterable
@@ -14,17 +14,10 @@ def timer(func: Callable):
     return wrapper
 
 def required_column(requireds: Iterable[str] | None = None):
-    """
-    Kullanım:
-    @required_column                -> varsayılan {'name','age','city'}
-    veya
-    @required_column({'name','age'}) -> özel set
-    Decorated fonksiyonun ilk argümanı `rows` (list[dict]) olmalıdır.
-    """
+    
     default = {"name", "age", "city"}
 
-    # Eğer decorator doğrudan (@required_column) olarak kullanıldıysa,
-    # python buraya fonksiyonu değil None/iterable gönderir.
+    
     def make_deco(reqs):
         reqs_set = set(reqs) if reqs is not None else default
         def deco(func: Callable):
@@ -44,7 +37,7 @@ def required_column(requireds: Iterable[str] | None = None):
             return wrapper
         return deco
 
-    # Eğer requireds doğrudan bir fonksiyon ise (yani @required_column olarak kullanıldı)
+   
     if callable(requireds):
         return make_deco(default)(requireds)
 

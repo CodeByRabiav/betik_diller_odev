@@ -1,4 +1,4 @@
-# main.py (veya mevcut çalıştırdığın dosya)
+
 from src.dosya_islemleri import read_csv, write_json, write_text
 from src.processing import stats, build_report
 

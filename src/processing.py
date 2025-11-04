@@ -1,4 +1,4 @@
-# src/processing.py
+
 from typing import List, Dict, Any
 from collections import Counter
 
@@ -38,11 +38,7 @@ def clean_rows(rows: List[Dict[str, str]]) -> List[Dict[str, Any]]:
     return cleaned
 
 def stats(rows: List[Dict[str, str]]) -> Dict[str, Any]:
-    """
-    rows -> ham csv satırları (list of dict)
-    döndürür: {"count": int, "avg_age": float|None, "by_city": {city:count}, "cleaned": [...]}
-    (cleaned alanı, istersen dosyaya yazdırılacak temizlenmiş kayıtlar için kullanılır)
-    """
+    
     cleaned = clean_rows(rows)
     count = len(cleaned)
     if count == 0:
