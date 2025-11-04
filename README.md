@@ -13,4 +13,4 @@ Bu proje, bir CSV dosyasındaki kişisel verileri okuyup:
 
 
 
-![Klasör Yapısı](./images/folder_structure.png)
+![Klasör Yapısı](folder_structure.png)
