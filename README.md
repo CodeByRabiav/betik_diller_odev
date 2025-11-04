@@ -8,4 +8,9 @@ Bu proje, bir CSV dosyasındaki kişisel verileri okuyup:
 ## Örnek Çıktılar
 
 ![Çıktı Dosyası]([./images/output_example.png](https://github.com/CodeByRabiav/betik_diller_odev/blob/main/folder_structure.png))
+
+
+
+
+
 ![Klasör Yapısı](./images/folder_structure.png)
