@@ -1,10 +1,11 @@
 {
-  "count": 5,
-  "avg_age": 30.0,
+  "count": 6,
+  "avg_age": 28.33,
   "by_city": {
     "Trabzon": 2,
     "İstanbul": 1,
     "Ankara": 1,
-    "İzmir": 1
+    "İzmir": 1,
+    "erzurum": 1
   }
 }
